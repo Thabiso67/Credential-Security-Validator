@@ -1,0 +1,21 @@
+
+/* Style for the body */
+body {
+  font-family: Arial, sans-serif; /* Set font */
+  margin: 50px; /* Add space around content */
+  text-align: center; /* Center all content */
+  background-color: #f2f2f2; /* Light gray background */
+}
+
+/* Style for input box and button */
+input, button {
+  padding: 10px; /* Space inside input/button */
+  margin: 10px; /* Space around input/button */
+  font-size: 16px; /* Larger font */
+}
+
+/* Style for result paragraph */
+#result {
+  font-weight: bold; /* Make result text bold */
+  margin-top: 20px; /* Space above the result */
+}
