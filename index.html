@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credential Security Validator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Credential Security Validator</h1>
+
+  <div class="card">
+    <label class="sr-only" for="password">Password</label>
+    <input type="password" id="password" placeholder="Enter your password" autocomplete="new-password" />
+    <button id="checkBtn" type="button">Check Strength</button>
+
+    <p id="result" aria-live="polite"></p>
+
+    <div class="criteria" aria-label="Strong password requirements">
+      <h2>Strong password checklist</h2>
+      <ul>
+        <li id="c-length"><span class="status" aria-hidden="true">○</span><span class="text">At least 8 characters</span></li>
+        <li id="c-upper"><span class="status" aria-hidden="true">○</span><span class="text">Contains an uppercase letter (A–Z)</span></li>
+        <li id="c-lower"><span class="status" aria-hidden="true">○</span><span class="text">Contains a lowercase letter (a–z)</span></li>
+        <li id="c-number"><span class="status" aria-hidden="true">○</span><span class="text">Contains a number (0–9)</span></li>
+        <li id="c-special"><span class="status" aria-hidden="true">○</span><span class="text">Contains a special character (e.g., !@#$)</span></li>
+      </ul>
+    </div>
+
+    <div id="gifContainer" class="gif" aria-hidden="true"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
